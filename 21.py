@@ -61,7 +61,6 @@ def precalc_dir_pad(depth):
                 for dir_pattern in dir_ways[all_patterns[i]][all_patterns[j]]:
                     patterns[k][i][j] = min(patterns[k][i][j],
                         calc_dir_pad(dir_pattern, patterns[k-1]))
-    print(patterns)
     return patterns[-1]
 
 def calc_dir_pad(pattern, patterns):
